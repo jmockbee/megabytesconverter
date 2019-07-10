@@ -2,37 +2,17 @@
 
 public class MegabytesConverter {
 
-    public static void (int kiloBytes) {
+    public static void printMegaBytesAndKiloBytes(int kiloBytes) {
         if (kiloBytes < 0) {
-            System.out.println( "invalid value");
+            System.out.println("Invalid Value");
         } else {
             int megaBytes = (kiloBytes / 1024);
-            
+            int remainder = (kiloBytes % 1024);
+            System.out.println(kiloBytes + "KB = " + megaBytes + " MB and " + remainder + " KB");
+
+        }
+
 
     }
-
-
 }
 
-
-//    public static long  toMilesPerHour(double kilometersPerHour){
-//
-//        if (kilometersPerHour <0){
-//            return -1;
-//        }
-//
-//        return Math.round(kilometersPerHour/1.609);
-//
-//    }
-//    public static void printConversion(double kilometersPerHour) {
-//
-//        if (kilometersPerHour <0) {
-//            System.out.println( "invalid value");
-//        } else {
-//            long milesPerHour = toMilesPerHour(kilometersPerHour);
-//            System.out.println(kilometersPerHour+" km/h = " + milesPerHour +
-//                    " mi/h");
-//        }
-//
-//    }
-//}
